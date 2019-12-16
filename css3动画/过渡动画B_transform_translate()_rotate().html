@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过渡动画B</title>
+    <style>
+        .transition{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s, height 2s, background-color 2s, transform 2s;
+            -moz-transition: width 2s, height 2s, background-color 2s, -moz-transform 2s;
+            -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+            -o-transition: width 2s, height 2s, background-color 2s, -o-transform 2s;
+        }
+        .transition:hover{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            transform: rotate(60deg) translate(600px, 0px);
+            -ms-transform: rotate(60deg) translate(600px, 0px);
+            -moz-transform: rotate(60deg) translate(600px, 0px);
+            -webkit-transform: rotate(60deg) translate(600px, 0px);
+            -o-transform: rotate(60deg) translate(600px, 0px);
+        }
+    </style>
+</head>
+<body>
+    <!-- transition是“规定”动画动作及时间的 -->
+    <!-- transform是“定义”转换属性的，也就是将元素做什么动作 -->
+
+    <!-- translate(x, y)移动 -->
+    <!-- translateX()横向移动 -->
+    <!-- translateY()纵向移动 -->
+    
+    <!-- rotate(100deg)旋转 -->
+
+    <div class="transition"></div>
+</body>
+</html>

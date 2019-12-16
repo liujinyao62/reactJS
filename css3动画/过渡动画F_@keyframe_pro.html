@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ch-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @keyframes progress {
+            0%{background-color: cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+            25%{background-color: cyan; left: 700px; top: 200px; transform: rotate(30deg);}
+            50%{background-color: darkorange; left: 700px; top: 400px; transform: rotate(0deg);}
+            75%{background-color: deeppink; left: 500px; top: 400px; transform: rotate(-30deg);}
+            100%{background-color:cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+        }
+        @-moz-keyframes progress {
+            0%{background-color: cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+            25%{background-color: cyan; left: 700px; top: 200px; transform: rotate(30deg);}
+            50%{background-color: darkorange; left: 700px; top: 400px; transform: rotate(0deg);}
+            75%{background-color: deeppink; left: 500px; top: 400px; transform: rotate(-30deg);}
+            100%{background-color:cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+        }
+        @-webkit-keyframes progress {
+            0%{background-color: cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+            25%{background-color: cyan; left: 700px; top: 200px; transform: rotate(30deg);}
+            50%{background-color: darkorange; left: 700px; top: 400px; transform: rotate(0deg);}
+            75%{background-color: deeppink; left: 500px; top: 400px; transform: rotate(-30deg);}
+            100%{background-color:cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+        }
+        @-o-keyframes progress {
+            0%{background-color: cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+            25%{background-color: cyan; left: 700px; top: 200px; transform: rotate(30deg);}
+            50%{background-color: darkorange; left: 700px; top: 400px; transform: rotate(0deg);}
+            75%{background-color: deeppink; left: 500px; top: 400px; transform: rotate(-30deg);} 
+            100%{background-color:cadetblue; left: 500px; top: 200px; transform: rotate(0deg);}
+        }
+        .keyframe{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            position:relative;
+            background-color: cadetblue;
+            animation: progress 6s infinite;
+            -moz-animation: progress 6s infinite;
+            -webkit-animation: progress 6s infinite;
+            -o-animation: progress 6s infinite;
+        }
+    </style>    
+</head>
+<body>
+    <div class="keyframe"></div>
+</body>
+</html>

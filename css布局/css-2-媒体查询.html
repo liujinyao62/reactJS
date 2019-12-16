@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            border: 2px solid red;
+        }
+
+        .nav {
+            float: left;
+            width: 25%;
+            border: 2px solid blue;
+        }
+
+        .section1 {
+            margin-left: 25%;
+            border: 2px solid yellowgreen;
+        }
+
+        .section2 {
+            margin-left: 25%;
+            border: 2px solid green;
+        }
+
+        @media screen and(min-width: 600px) {
+            .container {
+                width: 100%;
+                border: 2px solid red;
+            }
+
+            .nav {
+                float: left;
+                width: 25%;
+                border: 2px solid blue;
+            }
+
+            .section1 {
+                margin-left: 25%;
+                border: 2px solid yellowgreen;
+            }
+
+            .section2 {
+                margin-left: 25%;
+                border: 2px solid green;
+            }
+        }
+
+        @media screen and(max-width: 599px) {
+            .container {
+                width: 100%;
+                border: 2px solid red;
+            }
+
+            .nav {
+                width: 100%;
+                border: 2px solid blue;
+            }
+
+            .section1 {
+                width: 100%;
+                border: 2px solid yellowgreen;
+            }
+
+            .section2 {
+                width: 100%;
+                border: 2px solid green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <p>“响应式设计（Responsive Design” 是一种让网站针对不同的浏览器和设备“呈现”不同显示效果的策略，这样可以让网站在任何情况下显示的很棒！</p>
+        </div>
+        <div class="section1">
+            <p>当你调整浏览器窗口大小时，布局比以前更酷了！</p>
+        </div>
+        <div class="section2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

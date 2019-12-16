@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .transition{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: #ffffff;
+            line-height: 100px;
+            transition: transform 1s;
+            -moz-transition: transform 1s;
+            -webkit-transition: transform 1s;
+            -o-transition: transform 1s;
+        }
+        .transition:hover{
+            /* 3D旋转 */
+            /* transform: rotateX(60deg); */
+            transform: rotateY(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="transition">rotate3D旋转</div>
+</body>
+</html>

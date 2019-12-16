@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>过渡动画</title>
+    <style>
+        .transition{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: transform 2s;
+            -moz-transition: -moz-transform 2s;
+            -webkit-transition: -webkit-transform 2s;
+            -o-transition: -o-transform 2s;
+        }
+        .transition:hover{
+            transform: scale(2, 2);
+            -moz-transform: scale(2, 2);
+            -webkit-transform: scale(2, 2);
+            -o-transform: scale(2, 2);
+        }
+    </style>
+</head>
+<body>
+    <div class="transition"></div>
+</body>
+</html>
