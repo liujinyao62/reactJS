@@ -1,0 +1,8 @@
+.fl{
+    float: left;
+    font-size: 18px;
+    border: 2px solid red;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
